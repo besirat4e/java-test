@@ -32,6 +32,6 @@ jobs:
     - name: Unit Tests
       run: ./mvnw test
     - name: Integration Tests
-      run: ./mvnw integration-tests -DskipITs=false
+      run: ./mvnw integration-test -DskipITs=false
     - name: Package
       run: ./mvnw package
