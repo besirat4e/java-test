@@ -41,3 +41,6 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello"
+  broken-job:
+    runs-on: ubuntu-latest
+    
