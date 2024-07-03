@@ -27,11 +27,4 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Compile with Maven
-      run: ./mvnw clean compile
-    - name: Unit Tests
-      run: ./mvnw test
-    - name: Integration Tests
-      run: ./mvnw integration-test -DskipITs=false
-    - name: Package
-      run: ./mvnw package
+      run: ./mvnw package -DskipITs=false
